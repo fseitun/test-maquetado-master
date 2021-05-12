@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: calc(139px + 260px + 16px + 812px);
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #100217e6;
+  z-index: 100;
+}
+
+.logo {
+  width: 206px;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.iconSet {
+  width: 95px;
+  /* background-color: red; */
+  display: flex;
+  position: absolute;
+  top: 27px;
+  right: 38px;
+}
+
+.icon {
+  margin: 0 auto;
+}
+
+.icon img {
+  height: 24px;
+}
+
+header nav {
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 58.857979502%; /*804/1366*, traté sin éxito de hacer width: calc(804/1366)% */
+  top: 65px;
+}
+
+header nav span {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #fafafa;
+  letter-spacing: 0.4px;
+  line-height: 1.5rem;
+}
+
+.sale {
+  font-weight: bold;
+}
+
+aside {
+  margin-top: 141px;
+  margin-left: 139px;
+  float: left;
+  width: 260px;
+}
+
+h1 {
+  /*Zapatillas*/
+  margin: 0;
+  line-height: 1.8125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.03rem;
+  padding-bottom: 7.5px;
+  color: #030b1c;
+  border-bottom: 1px solid #030b1c;
+}
+
+h2 {
+  /*Filtrar*/
+  margin: 16.5px 0 14px;
+  line-height: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: 0.03rem;
+  color: #030b1c;
+}
+
+h3 {
+  /*Categoría - Talle - Color*/
+  margin: 14px 0 5px;
+  padding-left: 1rem;
+  height: calc(29rem / 16);
+  /* padding: auto 0 auto; */ /*pendiente centrar verticalmetne*/
+  line-height: 1.1875rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  color: #030b1c;
+  background-color: #e4e8ee;
+}
+
+ul {
+  margin: 0;
+  padding-inline-start: 0;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+.texto {
+  line-height: calc(19rem / 16);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  color: #030b1c;
+}
+
+.grid-container {
+  margin-top: 141px;
+  float: right;
+  width: 812px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 32px 16px;
+}
+.grid-item {
+  width: 260px;
+  height: 232px;
+}
+.grid-item img {
+  width: 260px;
+  height: 182px;
+  border-bottom: 1px solid #030b1c;
+}
+
+.price {
+  line-height: 1.375rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: calc(19rem / 16);
+  letter-spacing: 0.02rem;
+  color: #030b1c;
+}
+
+footer {
+  position: relative;
+  top: 107px;
+  clear: both;
+  height: 58px;
+  background-color: #100217e6;
+}
+
+footer nav {
+  position: relative;
+  top: 20px;
+  width: 655px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+footer nav span {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fafafa;
+  letter-spacing: 0.4px;
+  height: 1.1875rem;
+}
+
+@media (max-width: 360px) {
+  aside {
+    display: none;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 32px 16px;
+  }
+}
